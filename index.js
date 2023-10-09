@@ -5,8 +5,8 @@ import cors from "cors";
 
 const server = express();
 server.use((req,res,next) => {
-    res.header('Access-Control-Allow-Origin','*');
-    res.header('Access-Control-Allow-Headers','*');
+    req.header('Access-Control-Allow-Origin','*');
+    req.header('Access-Control-Allow-Headers','*');
 })
 
 
